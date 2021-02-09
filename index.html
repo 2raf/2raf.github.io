@@ -29,7 +29,7 @@
             padding-top: 30px;
         }
         .discord-button{
-            background-color: #2c5492;
+            background-color: #333;
             padding: 12px 50px;
             border-radius: 40px;
             color: white;
@@ -39,7 +39,7 @@
             margin-top: 3%;
         }
         .discord-button:hover{
-            background-color: #1a355f;
+            background-color: #000000;
         }
         .icon-img{
             height: auto;
@@ -57,17 +57,18 @@
         }
         .regiments{
             background-color: #b00118;
-            width: 100%;
             height: 300px;
             display: flex;
             padding: 5% 10%;
         }
         .regiment-section{
             width: 30%;
-            padding: 30px 15px;
+            padding: 1% 5%;
             color: white;
             font-family: 'Open Sans', sans-serif;
             text-align: center;
+            max-width: 240px;
+            min-width: 218px;
         }
         .sub-header{
             background-color: #b00118;
@@ -80,9 +81,14 @@
         .mission-community{
             height: 500px;
             background-color: #eeeeeb;
-            width: 100%;
             font-color: black;
             padding: 3% 7%;
+        }
+        .our-mission{
+            width: 65%;
+            font-size: 18px;
+            border-left: solid #b00118 5px;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -130,7 +136,7 @@
     </div>
     <div class="mission-community">
         <h1>Our Mission</h1>
-        <h5>Acknowledging the current lackluster state of the New Player Experience, 
+        <h5 class="our-mission" style="width: 60%; font-size: 18px;">Acknowledging the current lackluster state of the New Player Experience, 
             2RAF has chosen to take upon itself the training of newly arrived combatants
             for the Terran Republic and harden their Spirit in Coordinated Battle upon the lands of Auraxis. 
             We who lead the outfit, have each been chosen for our continuous desire to help people and see them
