@@ -1,0 +1,11 @@
+.nav-bar{
+    width: 100%;
+    background-color: #000000;
+    height: 100px;
+    position: fixed;
+}
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: #efeded;
+}
