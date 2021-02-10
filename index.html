@@ -62,7 +62,6 @@
         }
         .regiments{
             background-color: #b00118;
-            height: 300px;
             display: flex;
             padding: 1% 7%;
         }
@@ -85,12 +84,42 @@
             background-color: #eeeeeb;
             font-color: black;
             padding: 3% 7%;
+            height: 700px;
+            width: 500px;
+            position: absolute;
+            z-index: 2;
+            top: 1100px;
+            left: 100px;
         }
         .our-mission{
             width: 50%;
             font-size: 18px;
             border-left: solid #b00118 5px;
             padding-left: 20px;
+        }
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          font-size: 16px;
+          font-color: #f3283a;
+        }
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 9px;
+          padding: 5px;
+
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
         }
     </style>
 </head>
@@ -137,7 +166,7 @@
         </div>
     </div>
     <div class="mission-community">
-        <div style="display: flex;">
+        <div>
             <div style="float: left; width: 70%;">
                 <h1>Our Mission</h1>
                 <h5 class="our-mission" style="width: 80%; font-size: 18px;">Acknowledging the current lackluster state of the New Player Experience, 
@@ -146,18 +175,16 @@
                     We who lead the outfit, have each been chosen for our continuous desire to help people and see them
                     thrive as we conquer in the name of Dakka.</h5>
             </div>
-            <div style="float: right; color: #b00118"">
+            <div style="float: right; color: #f3283a">
                 <div style="padding-top: 20%;">
-                    <h2 style="margin-bottom: 5px;">Our Statement</h2>
-                    <span>Train our members to thrive in battle.</span>
+                    <div class="tooltip">Our Statement <span class="tooltiptext">Train our members to thrive in battle.</span></div>
                 </div>
                 <div>
-                    <h2 style="margin-bottom: 5px;">Our Vision</h2>
-                    <span>Become one of the top training outfits of Emerald TR.</span>
+                    <div class="tooltip">Our Vision <span class="tooltiptext">Become one of the top training outfits of Emerald TR.</span></div> 
                 </div>
             </div>
         </div>
-        <div style="display: flex;">
+        <div>
             <div style="float: left;">
                 <h1>Community</h1>
                 <h5 class="our-mission" style="width: 70%; font-size: 18px;">The community has shown to be one of comradeship,
@@ -165,14 +192,12 @@
                     can escape to when they have a few hours on their hands to fight for the glory of the Terran Republic on Auraxis,
                     doing so by enforcing and adhering to the values as stated in our Code of Conduct.</h5>
             </div>
-            <div style="float: right; color: #b00118">
+            <div style="float: right; color: #f3283a">
                 <div style="padding-top: 20%;">
-                    <h2 style="margin-bottom: 5px;">Our Promise to the Community</h2>
-                    <span>Maintain the Healthy & Welcoming State of the Community, offering members an escape to which they wish to return.</span>
+                    <div class="tooltip">Our Promise to the Community <span class="tooltiptext">Maintain the Healthy & Welcoming State of the Community, offering members an escape to which they wish to return.</span></div>
                 </div>
                 <div>
-                    <h2 style="margin-bottom: 5px;">Code of Conduct</h2>
-                    <span>Our code of conduct focuses on a few core values: remember the human (both friend and foe), play for the enjoyment of the game, and above all else, be a positive representation of the 2RAF community. If you’d like to know more, click here to view our full Code of Conduct.</span>
+                    <div class="tooltip">Code of Conduct <span class="tooltiptext">Our code of conduct focuses on a few core values: remember the human (both friend and foe), play for the enjoyment of the game, and above all else, be a positive representation of the 2RAF community. If you’d like to know more, click here to view our full Code of Conduct.</span></div>
                 </div>
              </div>
         </div>
