@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>2RAF</title>
-    <link rel="shortcut icon" type="image/png" href="/image/2raflogo.png"/>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
         body{
             margin: 0;
@@ -95,6 +103,12 @@
             width:50%;
             height:auto;
             padding: 5% 1%;
+            min-width: 218px;
+        }
+        .icon-container{
+            color:  #f3283a;
+            display: flex;
+            padding: 1% 7%;
         }
 
         @media screen and (max-width: 900px){
@@ -111,6 +125,9 @@
             }
             .our-mission{
                 width: 90%;
+            }
+            .icon-container{
+                display: block;
             }
         }
 
@@ -165,7 +182,7 @@
                     We who lead the outfit, have each been chosen for our continuous desire to help people and see them
                     thrive as we conquer in the name of Dakka.</h5>
             </div>
-            <div style="color: #f3283a">
+            <div class="icon-container">
                 <div class="icon-info">
                     <img style="height: 60px; width: 60px; margin-right:3%; float:left;" src="/images/statement.svg">
                     <h3 style="margin:0px;">Our Statement</h3><p>Train our members to thrive in battle.</p>
@@ -184,7 +201,7 @@
                     can escape to when they have a few hours on their hands to fight for the glory of the Terran Republic on Auraxis,
                     doing so by enforcing and adhering to the values as stated in our Code of Conduct.</h5>
             </div>
-            <div style="color: #f3283a">
+            <div class="icon-container">
                 <div class="icon-info">
                     <img style="height: 60px; width: 60px; margin-right:3%; float:left;" src="/images/handshake.svg">
                     <h3 style="font-color: #f3283a; margin: 0;">Our Promise to the Community</h3>
@@ -201,7 +218,7 @@
         </div>
     </div>
     <div style="width: 100%; height: 5%; background-color: #333; padding: 10px 30px;">
-        <h5 style="color: grey;">Established 2021 with GitPages.</h5>
+        <h5 style="color: grey;">Established 2021 with GitHub Pages.</h5>
     </div>
 </body>
 </html>
