@@ -91,6 +91,11 @@ p, h5, span{
     display: flex;
     padding: 1%;
 }
+.footer{
+    height: 5%;
+    background-color: #333;
+    padding: 10px 30px;
+}
 
 @media screen and (max-width: 900px){
     .regiments{
