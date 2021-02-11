@@ -17,165 +17,54 @@
     <link rel="mask-icon" href="/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        body{
-            margin: 0;
-            overflow-x: hidden;
-            font-family: 'Open Sans', sans-serif;
-        }
-        p, h5, span{
-            font-family: 'Roboto', sans-serif;
-            overflow: hidden;
-        }
-        .main{
-            width: 100%;
-            height: 500px;
-            background-color: #eeeeeb;
-            text-align:center;
-            padding-top: 15%;
-            margin: 0;
-            background-image: url("/images/2raf_hero_gif.gif");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        .social-media{
-            padding-top: 30px;
-        }
-        .discord-button{
-            background-color: #b00118;
-            padding: 12px 50px;
-            border-radius: 40px;
-            color: white;
-            border: none;
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
-            margin-top: 3%;
-        }
-        .discord-button:hover{
-            background-color: #000000;
-        }
-        .icon-img{
-            height: auto;
-            width: 50px;
-        }
-        .main-logo{
-            height: auto; 
-            width: 40px; 
-            float: left;
-            padding: 25px;
-        }
-        .main-logo-long{
-            height: auto;
-            width: 300px;
-        }
-        .regiments{
-            background-color: #b00118;
-            display: flex;
-            padding: 1% 7%;
-        }
-        .regiment-section{
-            width: 30%;
-            padding: 1% 4%;
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-            min-width: 218px;
-        }
-        .sub-header{
-            background-color: #b00118;
-            text-align: center;
-            height: 80px;
-            font-family: 'Open Sans', sans-serif;
-            padding: 1% 15%;
-            color: white;
-        }
-        .mission-community{
-            background-color: #eeeeeb;
-            font-color: black;
-            padding: 3% 7%;
-        }
-        .our-mission{
-            width: 50%;
-            font-size: 18px;
-            border-left: solid #f3283a 5px;
-            padding-left: 20px;
-        }
-        .icon-info{
-            width:50%;
-            height:auto;
-            padding: 5% 1%;
-            min-width: 218px;
-        }
-        .icon-container{
-            color:  #f3283a;
-            display: flex;
-            padding: 1%;
-        }
-
-        @media screen and (max-width: 900px){
-            .regiments{
-                display: block;
-                text-align: center;
-                padding: 1% 4%;
-            }
-            .regiment-section{
-                width: 90%;
-            }
-            .icon-info{
-               width: 100%;
-            }
-            .our-mission{
-                width: 90%;
-            }
-            .icon-container{
-                display: block;
-            }
-        }
-
-    </style>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="logo">
-            <img class="main-logo-long" alt="2raf-long" src="/images/2raflogo.png">
+<!-- hero image -->
+    <div id="hero" class="main">
+        <div class="logo" id="logo-container">
+            <img class="main-logo-long" alt="2raf-long" src="/images/2raflogo.png" id="main-logo">
             <br>
-            <button onclick="window.location.href='https://discord.gg/xTteXATsdm'" class="discord-button">Join our discord</button>
+            <button onclick="window.location.href='https://discord.gg/xTteXATsdm'" class="discord-button" id="discord-button">Join our discord</button>
         </div>
-        <div class="social-media">
-            <a style="text-decoration: none;" href="https://twitch.tv/2raf_official">
+        <div class="social-media" id="social-media-container">
+            <a style="text-decoration: none;" href="https://twitch.tv/2raf_official" id="twitch-link">
                 <img class="icon-img" style="padding-right: 20px;" alt="twitch" src="/images/twitch.png">
             </a>
-            <a style="text-decoration: none;" href="https://youtube.com/channel/UCbDNjUlUYJSn1T9itj2_Ynw">
+            <a style="text-decoration: none;" href="https://youtube.com/channel/UCbDNjUlUYJSn1T9itj2_Ynw" id="youtube-link">
                 <img class="icon-img" style="width: 70px !important; padding-right: 20px;" alt="youtube" src="/images/youtube-logo.png">
             </a>
-            <a style="text-decoration: none;" href="https://twitter.com/2raf_official?s=11">
+            <a style="text-decoration: none;" href="https://twitter.com/2raf_official?s=11" id="twitter-link">
                 <img class="icon-img" style="width: 55px !important;" alt="twitter" src="/images/twitterlogo.png">
             </a>
         </div>
     </div>
-    <div class="sub-header">
+<!-- regiments -->
+    <div id="subheader" class="sub-header">
             <h1>Our Regiments</h1>
     </div>
-    <div class="regiments">
-        <div class="regiment-section" style=>
+    <div class="regiments" id="regiment-container">
+        <div class="regiment-section" id="regiment-section1">
             <img class="icon-img" src="/images/Anchor.svg" style="color: white">
             <h3 style="color: white;">Infantry Regiment: Black Ops</h3>
             <h5 style="color: lightgray">Join our Infantry Regiment today to start capturing bases, holding points, and winning alerts.</h5>
         </div>
-        <div class="regiment-section ">
+        <div class="regiment-section" id="regiment-section2">
             <img class="icon-img" src="/images/shield.svg" style="color: white">
             <h3 style="color: white;">Armor Regiment: BFG Division</h3>
             <h5 style="color: lightgray">Join our Armor regiment if you like participating in Armor Columns that push the battlefront forward!</h5>
         </div>
-        <div class="regiment-section ">
+        <div class="regiment-section" id="regiment-section3">
             <img class="icon-img" src="/images/plane.svg" style="color: white">
             <h3 style="color: white;">Air Regiment: Red Angels</h3>
             <h5 style="color: lightgray">If you don’t like getting your boots dirty, join the Red Angels! We run coordinated air support to help protect our other regiments and achieve air superiority.</h5>
         </div>
     </div>
-    <div class="mission-community">
+<!-- mission community -->
+    <div class="mission-community" id="information-container">
         <div>
-            <div style="float: left;">
+            <div style="float: left;" id="mission-blerb">
                 <h1>Our Mission</h1>
                 <h5 class="our-mission" style="width: 80%; font-size: 18px;">Acknowledging the current lackluster state of the New Player Experience, 
                     2RAF has chosen to take upon itself the training of newly arrived combatants
@@ -195,20 +84,20 @@
             </div>
         </div>
         <div>
-            <div style="float: left;">
+            <div style="float: left;" id="community-blerb">
                 <h1>Community</h1>
                 <h5 class="our-mission" style="width: 70%; font-size: 18px;">The community has shown to be one of comradeship,
                     unity and a gathered sense that we are all part of something greater than ourselves. It is a place many people
                     can escape to when they have a few hours on their hands to fight for the glory of the Terran Republic on Auraxis,
                     doing so by enforcing and adhering to the values as stated in our Code of Conduct.</h5>
             </div>
-            <div class="icon-container">
-                <div class="icon-info">
+            <div class="icon-container" id="icon-container">
+                <div class="icon-info" id="icon-info1">
                     <img style="height: 60px; width: 60px; margin-right:3%; float:left;" src="/images/handshake.svg">
                     <h3 style="font-color: #f3283a; margin: 0;">Our Promise</h3>
                     <p style="margin-left: 0;">Maintain the Healthy & Welcoming State of the Community, offering members an escape to which they wish to return.</p>
                 </div>
-                <div class="icon-info">
+                <div class="icon-info" id="icon-info2">
                     <img style="height: 60px; width: 60px; margin-right:3%; float:left;" src="/images/scale.svg">
                     <h3 style="font-color: #f3283a; margin:0;">Code of Conduct</h3>
                     <p>Our code of conduct focuses on a few core values: remember the human (both friend and foe),
@@ -218,7 +107,8 @@
              </div>
         </div>
     </div>
-    <div style="width: 100%; height: 5%; background-color: #333; padding: 10px 30px;">
+<!-- basic footer -->
+    <div id="footer" style="width: 100%; height: 5%; background-color: #333; padding: 10px 30px;">
         <h5 style="color: grey;">Established 2021 with GitHub Pages.</h5>
     </div>
 </body>
