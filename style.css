@@ -95,10 +95,7 @@ p, h5, span{
 }
 
 #slides{
-  position: relative;
-  height: 150px;
-  padding: 0px;
-  margin: 0px;
+  opacity: .8;
   list-style-type: none;
 }
 
@@ -123,8 +120,6 @@ p, h5, span{
 }
 
 .slides{
-  font-size: 40px;
-  padding: 40px;
   box-sizing: border-box;
   background: #333;
   color: #fff;
