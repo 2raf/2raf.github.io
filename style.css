@@ -97,6 +97,15 @@ p, h5, span{
     padding: 10px 30px;
 }
 
+.slides{
+    display: none;
+}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 900px){
     .regiments{
         display: block;
