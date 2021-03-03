@@ -9,7 +9,7 @@ p, h5, span{
 }
 .main{
     width: 100%;
-    height: auto;
+    height: 500px;
     background-color: #eeeeeb;
     text-align:center;
     padding-top: 15%;
@@ -133,6 +133,7 @@ p, h5, span{
   box-sizing: border-box;
   background: #333;
   color: #fff;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 900px){
