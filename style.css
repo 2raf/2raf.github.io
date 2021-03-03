@@ -156,4 +156,7 @@ p, h5, span{
     .icon-container{
         display: block;
     }
+    .main-container{
+        top: 40%;
+    }
 }
