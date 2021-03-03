@@ -6,9 +6,8 @@ var myIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
   var x = document.getElementsByClassName("slides");
-  for (i = 0; i < x.length; i++) { //loop of slides
+  for (var i = 0; i < x.length; i++) { //loop of slides
     x[i].style.display = "none";  
   }
   myIndex++; //increase my index
