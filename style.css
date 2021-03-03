@@ -50,6 +50,7 @@ p, h5, span{
     background-color: #b00118;
     display: flex;
     padding: 1% 7%;
+    position: relative;
 }
 .regiment-section{
     width: 30%;
@@ -71,6 +72,7 @@ p, h5, span{
     background-color: #eeeeeb;
     font-color: black;
     padding: 3% 7%;
+    position: relative;
 }
 .our-mission{
     width: 50%;
