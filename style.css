@@ -94,6 +94,12 @@ p, h5, span{
     padding: 10px 30px;
 }
 
+.main-container{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
 #slides{
   opacity: .8;
   list-style-type: none;
